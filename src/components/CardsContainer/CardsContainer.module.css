@@ -28,5 +28,6 @@
 @media (max-width: 768px) {
   .container {
     height: 40%;
+    scroll-snap-type: none;
   }
 }
