@@ -16,6 +16,7 @@ export default function Home() {
       <script
         type="module"
         src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/tailChase.js"
+        defer
       ></script>
     </main>
   );
