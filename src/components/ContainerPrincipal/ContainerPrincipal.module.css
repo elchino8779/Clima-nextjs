@@ -28,3 +28,9 @@
   height: auto;
   filter: drop-shadow(0px -12px 5px #675b91);
 }
+
+@media (max-width: 768px) {
+  .container {
+    height: 60%;
+  }
+}
