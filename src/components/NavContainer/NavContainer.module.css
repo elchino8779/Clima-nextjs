@@ -1,0 +1,55 @@
+.container {
+  width: 100vw;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.loader {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  left: 50%;
+  top: 95%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.loaderNone {
+  opacity: 1;
+  visibility: visible;
+}
+
+.posicionActual {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #c5d1d8;
+  position: absolute;
+  right: 30px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: 60px;
+    padding: 0 20px;
+    top: 10px;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .loader {
+    display: none;
+  }
+
+  .posicionActual {
+    display: none;
+  }
+}

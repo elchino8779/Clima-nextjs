@@ -1,0 +1,30 @@
+.container {
+  width: 100vw;
+  height: 70%;
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(
+    to bottom,
+    rgb(92, 148, 176) 0%,
+    rgb(191, 197, 208) 100%
+  );
+}
+
+.containerNight {
+  width: 100vw;
+  height: 70%;
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(to bottom, #170a42 0%, #1a0a48 100%);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.imageNight {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0px -12px 5px #675b91);
+}
