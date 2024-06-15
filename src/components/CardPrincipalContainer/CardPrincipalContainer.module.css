@@ -2,7 +2,7 @@
   width: 300px;
   height: 320px;
   position: fixed;
-  top: 12%;
+  top: 100px;
   left: 5%;
   transition: all 0.5s ease-in-out;
   display: flex;
@@ -132,6 +132,7 @@
 @media (max-width: 530px) {
   .container {
     left: 50%;
+    top: 125px;
     transform: translateX(-50%);
   }
 

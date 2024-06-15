@@ -28,14 +28,25 @@
 }
 
 .posicionActual {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: #c5d1d8;
   position: absolute;
   right: 30px;
+  z-index: -1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 532px) {
+  .posicionActual {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    top: 120%;
+  }
+}
+
+@media (max-width: 1024px) {
   .container {
     height: 60px;
     padding: 0 20px;
@@ -48,11 +59,5 @@
   .loader {
     top: 65px;
     left: 46px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .posicionActual {
-    display: none;
   }
 }
