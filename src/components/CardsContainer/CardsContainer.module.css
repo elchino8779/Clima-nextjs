@@ -23,10 +23,16 @@
   flex-wrap: wrap;
   overflow: auto;
   padding: 20px;
+  scroll-snap-type: y mandatory;
 }
 
 @media (max-width: 768px) {
   .container {
+    height: 40%;
+    scroll-snap-type: none;
+  }
+
+  .containerNight {
     height: 40%;
     scroll-snap-type: none;
   }

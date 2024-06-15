@@ -46,7 +46,8 @@
     align-items: center;
   }
   .loader {
-    display: none;
+    top: 65px;
+    left: 46px;
   }
 }
 

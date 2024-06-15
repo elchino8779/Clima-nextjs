@@ -11,6 +11,8 @@ const DataContextProvider = ({ children }) => {
 
   const getData = async (query) => {
     try {
+      setCurrentData({});
+      setForecastData([]);
       setLoader(true);
       const response = await fetch(`/api/location/${query}`, {
         method: 'GET',
@@ -30,6 +32,8 @@ const DataContextProvider = ({ children }) => {
 
   const getDataGeolocation = async (lat, lon) => {
     try {
+      setCurrentData({});
+      setForecastData([]);
       setLoader(true);
       const response = await fetch(`/api/geolocation?lat=${lat}&lon=${lon}`, {
         method: 'GET',

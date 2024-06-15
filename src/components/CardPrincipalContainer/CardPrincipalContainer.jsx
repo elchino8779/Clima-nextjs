@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import style from './CardPrincipalContainer.module.css';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { useDataContext } from '@/context/DataContext';
 require('moment/locale/es');

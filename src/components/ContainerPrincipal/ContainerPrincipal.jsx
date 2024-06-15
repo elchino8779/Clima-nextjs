@@ -1,14 +1,19 @@
 import style from './ContainerPrincipal.module.css';
 import CardPrincipalContainer from '../CardPrincipalContainer/CardPrincipalContainer';
-
-export const getHours = () => {
-  const date = new Date();
-  const hours = date.getHours();
-  return hours > 6 && hours < 18 ? 'day' : 'night';
-};
+import { useEffect, useState } from 'react';
 
 const ImgFondo = () => {
-  const hours = getHours();
+  const [hours, setHours] = useState('day');
+
+  const getHours = () => {
+    const date = new Date();
+    const hours = date.getHours();
+    hours > 6 && hours < 18 ? setHours('day') : setHours('night');
+  };
+
+  useEffect(() => {
+    getHours();
+  }, []);
 
   return (
     <div className={hours === 'day' ? style.container : style.containerNight}>

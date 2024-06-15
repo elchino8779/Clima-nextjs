@@ -7,12 +7,14 @@ export const GET = async (req) => {
 
   try {
     const data = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.API_KEY}&units=metric&lang=es`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.API_KEY}&units=metric&lang=es`,
+      { cache: 'no-store' }
     );
     const json = await data.json();
 
     const dataForecasts = await fetch(
-      `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${process.env.API_KEY}&units=metric&lang=es`
+      `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${process.env.API_KEY}&units=metric&lang=es`,
+      { cache: 'no-store' }
     );
     const jsonForecasts = await dataForecasts.json();
 
