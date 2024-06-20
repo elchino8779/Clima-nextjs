@@ -8,7 +8,7 @@
     <h3>✔️ Datos:</h3>
     <p>
 	🔹 Este proyecto fue creado con fines de practica utilizando Weather API <br>
-	🔹 Desarrollado en ReactJs y NextJs <br>
+	🔹 Desarrollado en NextJs <br>
 	🔹 App web que permite conocer los datos del clima de cualquier parte del mundo <br>
     </p>
 </div>
